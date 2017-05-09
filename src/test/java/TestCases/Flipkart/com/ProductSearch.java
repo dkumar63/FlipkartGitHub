@@ -18,8 +18,8 @@ import org.testng.annotations.Test;
 public class ProductSearch 
 {
 	WebDriver driver;
-	JavascriptExecutor js;
-	Actions action;
+	//JavascriptExecutor js;
+	//Actions action;
 	
 	@BeforeTest
 	public void setup()
@@ -29,8 +29,8 @@ public class ProductSearch
 		driver.get("https://www.flipkart.com/");
 		driver.manage().timeouts().pageLoadTimeout(300,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-		js = (JavascriptExecutor)driver;
-		action = new Actions(driver);
+		//js = (JavascriptExecutor)driver;
+		//action = new Actions(driver);
 	}	
 	@Test
 	public void VerifyTitle()
@@ -52,7 +52,7 @@ public class ProductSearch
 		System.out.println("Window Name is : "+driver.getWindowHandle());
 		//Assert.assertEquals("CDwindow-c8b19900-1e4a-48c7-a091-4310f70d692e",driver.getWindowHandle());
 	}
-	/*
+	
 	@Test
 	public void searchiphone6() throws InterruptedException
 	{
@@ -92,6 +92,7 @@ public class ProductSearch
 		System.out.println("Clicked on Availability :) ");
 		Thread.sleep(3000);
 		WebElement OutofStock = driver.findElement(By.xpath("//input[@class='_3uUUD5' and @type='checkbox']"));
+		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click;", OutofStock);
 		action.moveToElement(OutofStock).click().perform();
 		Thread.sleep(3000);
@@ -107,10 +108,10 @@ public class ProductSearch
 	System.out.println();
 	}
 }
-*/	
+	
 	@AfterTest
 	public void TearDown()
 	{
-		driver.quit();
+		///driver.quit();
 	}
 }
