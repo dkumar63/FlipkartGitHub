@@ -6,6 +6,9 @@
       <class name="TestCases.Flipkart.com.ProductSearch">
         <methods>
           <include name="setup"/>
+          <include name="searchiphone6"/>
+          <include name="VerifyURL"/>
+          <include name="VerifyTitle"/>
           <include name="TearDown"/>
           <include name="VerifyCurrentWindow"/>
         </methods>
