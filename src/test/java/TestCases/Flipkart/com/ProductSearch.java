@@ -17,9 +17,9 @@ import org.testng.annotations.Test;
 
 public class ProductSearch 
 {
-	/*WebDriver driver;
-	JavascriptExecutor js = (JavascriptExecutor)driver;
-	Actions action = new Actions(driver);
+	WebDriver driver;
+	JavascriptExecutor js;
+	Actions action;
 	
 	@BeforeTest
 	public void setup()
@@ -29,12 +29,28 @@ public class ProductSearch
 		driver.get("https://www.flipkart.com/");
 		driver.manage().timeouts().pageLoadTimeout(300,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-	}*/
-	
+		js = (JavascriptExecutor)driver;
+		action = new Actions(driver);
+	}	
 	@Test
 	public void VerifyTitle()
 	{
-		System.out.println("Jai to Java g k");
+		System.out.println("Title of the page is : "+driver.getTitle());
+		Assert.assertEquals("Online Shopping Site for Mobiles,Fashion,Books,Electronics,Home Appliances & More @ Flipkart",driver.getTitle());
+	}
+	
+	@Test
+	public void VerifyURL()
+	{
+		System.out.println("URL of the page is : "+driver.getCurrentUrl());
+		Assert.assertEquals("https://www.flipkart.com/",driver.getCurrentUrl());
+	}
+	
+	@Test
+	public void VerifyCurrentWindow()
+	{
+		System.out.println("Window Name is : "+driver.getWindowHandle());
+		//Assert.assertEquals("CDwindow-c8b19900-1e4a-48c7-a091-4310f70d692e",driver.getWindowHandle());
 	}
 	/*
 	@Test
@@ -95,6 +111,6 @@ public class ProductSearch
 	@AfterTest
 	public void TearDown()
 	{
-		//driver.quit();
+		driver.quit();
 	}
 }
