@@ -77,25 +77,30 @@ public class ProductSearch
 		{
 		driver.findElement(By.xpath("//div[@class='_2kFyHg _-9cJSB']/label/div[1]")).click();
 		System.out.println("Brand value Apple Selected.");
-	}
-	else
-	{
-		System.out.println("Apple already Selected.");
-	}
-		Thread.sleep(3000);
-		boolean availability = driver.findElement(By.xpath("//div[text()='Availability']")).isDisplayed();
+		}
+		else
+		{
+			System.out.println("Apple already Selected."); 
+		} 
+	
+		
+	Thread.sleep(3000);
+	boolean availability = driver.findElement(By.xpath("//div[text()='Availability']")).isDisplayed();
 	if(availability==true)
 	{
-		WebElement available = driver.findElement(By.xpath("//div[text()='Availability']"));
-		Actions action = new Actions(driver);
-		action.moveToElement(available).click().perform();
-		System.out.println("Clicked on Availability :) ");
-		Thread.sleep(3000);
-		WebElement OutofStock = driver.findElement(By.xpath("//input[@class='_3uUUD5' and @type='checkbox']"));
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click;", OutofStock);
-		action.moveToElement(OutofStock).click().perform();
-		Thread.sleep(3000);
+	WebElement available = driver.findElement(By.xpath("//div[text()='Availability']"));
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	js.executeScript("arguments[0].scrollIntoView()", available);
+	Thread.sleep(3000);
+	//js.executeScript("arguments[0].click;", available);
+	Actions action = new Actions(driver);
+	action.moveToElement(available).click().build().perform();
+	System.out.println("Clicked on Availability :) ");
+	Thread.sleep(3000);
+	WebElement OutofStock = driver.findElement(By.xpath("//input[@class='_3uUUD5' and @type='checkbox']"));
+	//js.executeScript("arguments[0].click;", OutofStock);
+	action.moveToElement(OutofStock).click().build().perform();
+	Thread.sleep(3000);
 	}
 
 	List<WebElement> list = driver.findElements(By.xpath("//div[@class='col col-3-12 col-md-3-12 MP_3W3']"));
@@ -112,6 +117,6 @@ public class ProductSearch
 	@AfterTest
 	public void TearDown()
 	{
-		///driver.quit();
+		driver.quit();
 	}
 }

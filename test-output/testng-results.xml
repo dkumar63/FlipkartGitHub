@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="39666" started-at="2017-05-09T01:22:38Z" finished-at="2017-05-09T01:23:18Z">
+  <suite name="Default suite" duration-ms="37234" started-at="2017-05-09T08:49:12Z" finished-at="2017-05-09T08:49:49Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="39666" started-at="2017-05-09T01:22:38Z" finished-at="2017-05-09T01:23:18Z">
+    <test name="Default test" duration-ms="37234" started-at="2017-05-09T08:49:12Z" finished-at="2017-05-09T08:49:49Z">
       <class name="TestCases.Flipkart.com.ProductSearch">
-        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="setup" is-config="true" duration-ms="9866" started-at="2017-05-09T06:52:38Z" finished-at="2017-05-09T06:52:48Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="setup" is-config="true" duration-ms="11646" started-at="2017-05-09T14:19:12Z" finished-at="2017-05-09T14:19:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyCurrentWindow()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="VerifyCurrentWindow" duration-ms="20" started-at="2017-05-09T06:52:48Z" finished-at="2017-05-09T06:52:48Z">
+        <test-method status="PASS" signature="VerifyCurrentWindow()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="VerifyCurrentWindow" duration-ms="10" started-at="2017-05-09T14:19:24Z" finished-at="2017-05-09T14:19:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCurrentWindow -->
-        <test-method status="PASS" signature="VerifyTitle()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="VerifyTitle" duration-ms="48" started-at="2017-05-09T06:52:48Z" finished-at="2017-05-09T06:52:48Z">
+        <test-method status="PASS" signature="VerifyTitle()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="VerifyTitle" duration-ms="53" started-at="2017-05-09T14:19:24Z" finished-at="2017-05-09T14:19:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitle -->
-        <test-method status="PASS" signature="VerifyURL()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="VerifyURL" duration-ms="59" started-at="2017-05-09T06:52:48Z" finished-at="2017-05-09T06:52:48Z">
+        <test-method status="PASS" signature="VerifyURL()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="VerifyURL" duration-ms="26" started-at="2017-05-09T14:19:24Z" finished-at="2017-05-09T14:19:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyURL -->
-        <test-method status="PASS" signature="searchiphone6()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="searchiphone6" duration-ms="28299" started-at="2017-05-09T06:52:48Z" finished-at="2017-05-09T06:53:17Z">
+        <test-method status="PASS" signature="searchiphone6()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="searchiphone6" duration-ms="23530" started-at="2017-05-09T14:19:24Z" finished-at="2017-05-09T14:19:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchiphone6 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="TearDown" is-config="true" duration-ms="1333" started-at="2017-05-09T06:53:17Z" finished-at="2017-05-09T06:53:18Z">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:TestCases.Flipkart.com.ProductSearch@5e3a8624]" name="TearDown" is-config="true" duration-ms="1939" started-at="2017-05-09T14:19:47Z" finished-at="2017-05-09T14:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- TestCases.Flipkart.com.ProductSearch -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
