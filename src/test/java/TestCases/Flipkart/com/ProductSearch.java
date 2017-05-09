@@ -17,9 +17,10 @@ import org.testng.annotations.Test;
 
 public class ProductSearch 
 {
-	WebDriver driver;
+	/*WebDriver driver;
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	Actions action = new Actions(driver);
+	
 	@BeforeTest
 	public void setup()
 	{
@@ -28,15 +29,15 @@ public class ProductSearch
 		driver.get("https://www.flipkart.com/");
 		driver.manage().timeouts().pageLoadTimeout(300,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
-	}
+	}*/
 	
-	@Test(priority = 1)
+	@Test
 	public void VerifyTitle()
 	{
-		Assert.assertEquals("Online Shopping Site for Mobiles,Fashion,Books,Electronics,Home Appliances & More @ Flipkart", driver.getTitle());
+		System.out.println("Jai to Java g k");
 	}
-	
-	@Test(priority = 2)
+	/*
+	@Test
 	public void searchiphone6() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//input[@class='LM6RPg']")).sendKeys("iphone 6");
@@ -90,9 +91,10 @@ public class ProductSearch
 	System.out.println();
 	}
 }
+*/	
 	@AfterTest
 	public void TearDown()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 }
